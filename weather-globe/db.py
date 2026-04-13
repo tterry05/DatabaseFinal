@@ -59,7 +59,7 @@ def get_weather_data():
             moonset,
             moon_phase,
             moon_illumination
-        FROM weather.weather;
+        FROM "world_weather"."weather";
     """)
     rows = cur.fetchall()
     cur.close()
