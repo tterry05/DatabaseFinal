@@ -269,7 +269,7 @@ html, body {
   border: 1px solid var(--border);
   border-top: 2px solid var(--cyan);
   border-radius: 2px;
-  padding: 16px 18px;
+  padding: 12px 14px;
   width: 320px;
   pointer-events: none;
   box-shadow: 0 8px 40px rgba(0,0,0,0.6);
@@ -279,8 +279,8 @@ html, body {
 #tooltip.hidden { opacity: 0; pointer-events: none; }
 
 .tt-header {
-  margin-bottom: 12px;
-  padding-bottom: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -315,7 +315,7 @@ html, body {
 }
 
 .tt-section {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .tt-section-title {
@@ -324,13 +324,13 @@ html, body {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--cyan-dim);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .tt-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4px 10px;
+  gap: 2px 10px;
 }
 
 .tt-row {
@@ -356,7 +356,7 @@ html, body {
 .tt-divider {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 /* Moon phase emoji span */
