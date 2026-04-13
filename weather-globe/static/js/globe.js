@@ -95,21 +95,6 @@ const Globe = (() => {
 
     svg.call(drag).call(zoom);
 
-    // Auto-rotate (slow)
-    let rotating = true;
-    let rotateTimer = d3.timer(() => {
-      if (!rotating) return;
-      const rotate = projection.rotate();
-      projection.rotate([rotate[0] + 0.12, rotate[1]]);
-      updateGlobe();
-    });
-
-    // Stop rotation permanently on first interaction
-    svg.on("mousedown.rotate", () => {
-      rotating = false;
-      rotateTimer.stop();
-    });
-
     // Window resize
     window.addEventListener("resize", () => {
       width  = container.clientWidth;

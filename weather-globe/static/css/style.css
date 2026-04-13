@@ -271,13 +271,9 @@ html, body {
   border-radius: 2px;
   padding: 16px 18px;
   width: 320px;
-  max-height: 80vh;
-  overflow-y: auto;
   pointer-events: none;
   box-shadow: 0 8px 40px rgba(0,0,0,0.6);
   transition: opacity 0.15s ease;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
 }
 
 #tooltip.hidden { opacity: 0; pointer-events: none; }
