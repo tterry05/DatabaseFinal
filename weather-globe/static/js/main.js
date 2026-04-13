@@ -21,6 +21,7 @@ async function loadData(useReal) {
   try {
     const res  = await fetch(url);
     const data = await res.json();
+    if (!res.ok) throw new Error(data.error || `Server returned ${res.status}`);
     Globe.renderDots(data);
     populateStats(data);
   } catch (err) {
