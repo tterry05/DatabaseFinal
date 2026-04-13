@@ -9,7 +9,7 @@ def get_connection():
     return psycopg2.connect(
         host=os.getenv("DB_HOST", "localhost"),
         port=os.getenv("DB_PORT", "5432"),
-        dbname=os.getenv("DB_NAME", "marigold"),
+        dbname=os.getenv("DB_NAME", "weather"),
         user=os.getenv("DB_USER", "postgres"),
         password=os.getenv("DB_PASSWORD", "")
     )
@@ -59,7 +59,7 @@ def get_weather_data():
             moonset,
             moon_phase,
             moon_illumination
-        FROM "world_weather"."weather";
+        FROM "world_weather"."GlobalWeatherRepository";
     """)
     rows = cur.fetchall()
     cur.close()
