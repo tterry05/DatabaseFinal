@@ -104,9 +104,11 @@ const Globe = (() => {
       updateGlobe();
     });
 
-    // Pause rotation on drag
-    svg.on("mousedown.rotate", () => { rotating = false; })
-       .on("mouseup.rotate",   () => { rotating = true; });
+    // Stop rotation permanently on first interaction
+    svg.on("mousedown.rotate", () => {
+      rotating = false;
+      rotateTimer.stop();
+    });
 
     // Window resize
     window.addEventListener("resize", () => {
