@@ -77,12 +77,12 @@ function buildTooltip(d) {
     <div class="tt-section">
       <div class="tt-section-title">Air Quality</div>
       <div class="tt-grid">
-        <div class="tt-row"><span class="tt-label">CO</span><span class="tt-value">${fmt(d.air_quality_Carbon_Monoxide, "μg/m³")}</span></div>
-        <div class="tt-row"><span class="tt-label">Ozone</span><span class="tt-value">${fmt(d.air_quality_Ozone, "μg/m³")}</span></div>
-        <div class="tt-row"><span class="tt-label">NO₂</span><span class="tt-value">${fmt(d.air_quality_Nitrogen_dioxide, "μg/m³")}</span></div>
-        <div class="tt-row"><span class="tt-label">SO₂</span><span class="tt-value">${fmt(d.air_quality_Sulphur_dioxide, "μg/m³")}</span></div>
-        <div class="tt-row"><span class="tt-label">PM2.5</span><span class="tt-value">${fmt(d.air_quality_PM2_5, "μg/m³")}</span></div>
-        <div class="tt-row"><span class="tt-label">PM10</span><span class="tt-value">${fmt(d.air_quality_PM10, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">CO</span><span class="tt-value">${fmt(d.air_quality_carbon_monoxide, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">Ozone</span><span class="tt-value">${fmt(d.air_quality_ozone, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">NO₂</span><span class="tt-value">${fmt(d.air_quality_nitrogen_dioxide, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">SO₂</span><span class="tt-value">${fmt(d.air_quality_sulphur_dioxide, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">PM2.5</span><span class="tt-value">${fmt(d.air_quality_pm2_5, "μg/m³")}</span></div>
+        <div class="tt-row"><span class="tt-label">PM10</span><span class="tt-value">${fmt(d.air_quality_pm0, "μg/m³")}</span></div>
       </div>
       <div style="margin-top:8px">
         <span class="tt-label">US EPA Index: </span>
