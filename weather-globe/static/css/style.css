@@ -413,3 +413,65 @@ html, body {
   text-transform: uppercase;
   margin-top: 2px;
 }
+
+/* BUTTON */
+#info-toggle {
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  z-index: 20;
+
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* PANEL */
+#info-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  z-index: 30;
+
+  transition: right 0.3s ease;
+  padding: 24px;
+}
+
+#info-panel.open {
+  right: 0;
+}
+
+/* CLOSE BUTTON */
+#info-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* CONTENT */
+#info-content h2 {
+  font-family: var(--mono);
+  margin-bottom: 12px;
+  color: var(--cyan);
+}
+
+#info-content p {
+  font-size: 13px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}

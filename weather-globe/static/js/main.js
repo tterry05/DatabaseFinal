@@ -61,3 +61,15 @@ function populateStats(data) {
   Globe.init();
   loadData();
 })();
+
+const infoToggle = document.getElementById("info-toggle");
+const infoPanel = document.getElementById("info-panel");
+const infoClose = document.getElementById("info-close");
+
+infoToggle.addEventListener("click", () => {
+  infoPanel.classList.add("open");
+});
+
+infoClose.addEventListener("click", () => {
+  infoPanel.classList.remove("open");
+});
