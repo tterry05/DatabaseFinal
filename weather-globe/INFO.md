@@ -157,7 +157,6 @@ weather-globe/
 | globe.js | ~300 | `create` tool | D3.js globe logic |
 | data.js | ~150 | `create` tool | Data binding |
 | style.css | ~250 | `create` tool | Styling |
-| weather_fake.json | ~500 | `create` tool | Demo dataset |
 | requirements.txt | 3 | `create` tool | Dependencies |
 | README.md | 62 | `create` tool | Documentation |
 
