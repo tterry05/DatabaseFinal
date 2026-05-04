@@ -586,6 +586,28 @@ html, body {
   font-family: var(--mono);
 }
 
+.dev-files {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.file-item {
+  font-size: 11px;
+  padding: 6px 8px;
+  background: rgba(0, 212, 255, 0.05);
+  border-left: 2px solid var(--cyan-dim);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.file-item strong {
+  color: var(--text);
+  font-family: var(--mono);
+  font-weight: 600;
+}
+
 .dev-model {
   font-size: 10px;
   color: var(--text-muted);
