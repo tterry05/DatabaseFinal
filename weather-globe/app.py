@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, render_template
 from db import get_weather_data
-import os
 
 app = Flask(__name__)
 
