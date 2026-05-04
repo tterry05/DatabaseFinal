@@ -2,7 +2,7 @@
 
 ## Project Creation Summary
 
-This project was **entirely AI-generated using GitHub Copilot CLI**. The development workflow demonstrates a full-stack implementation using advanced agent coordination and autonomous tool usage.
+This project was **entirely agentic engineered using GitHub Copilot CLI**. The development workflow demonstrates a full-stack implementation using advanced agent coordination and autonomous tool usage.
 
 ---
 
